@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-    width: 100%;
-    max-width: 90vw;
+    width: 90vmin;
+    height: 90vmin;
     aspect-ratio: 1;
     border: 2px solid black;
     margin: 0 auto;
@@ -13,4 +13,21 @@
 .cell {
     border: 1px solid lightgray;
     box-sizing: border-box;
+}
+.cell.active {
+    background-color: black;
+}
+
+.control{
+    text-align: center;
+    
+    margin: 10px;
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
 }
